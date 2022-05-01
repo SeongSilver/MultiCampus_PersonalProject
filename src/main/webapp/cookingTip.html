@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CHEF_CHAN_DELIVERY_COOKINGTIP</title>
+<meta name="viewport" content="width=device-width, initial-sale=1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+          integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+            integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+            crossorigin="anonymous"></script>
+<style>
+	body{
+		font-family:'웰컴체OTF Regular';
+		font-weight:300;
+	}
+	 header{
+	 	height:150px;
+	 	padding:0 0 0 10px;
+	 }
+	 header>a>img{
+	 	height:100px;
+	 	display:block;
+	 	margin:0px auto;
+	 	position: relative;
+	    top: 25px;
+	 }
+	 nav{
+	 	background-color:rgb(249,162,58);
+	 	height:50px;
+	 	margin:0 auto;
+	 }
+	 nav>div>h1{
+	 	color:#fff;
+		text-align:center;
+ 	}
+	 #main{
+	 	width:750px;
+	 	margin:0 auto;
+	 }
+	 #main>ul{
+	 	margin:0 auto;
+	 }
+	 #main>ul>li{
+	 	padding:15px;
+	 	margin:15px;
+	 }
+	 li::marker{
+	 	color:rgb(249,162,58);
+	 }
+	 button{
+	 	width:600px;
+	 	height:450px;
+	 	border:none;
+	 }
+	 button>img{
+	 	width:600px;
+	 	height:450px;
+	 }
+	 .contents>h2{
+	 	font-family:'웰컴체OTF Regular';
+		font-weight:500;
+		color:rgb(249,162,58);
+	 }
+	 .text{
+	 	margin:0 auto;
+	 }
+	 .text>h3,p{
+	 	margin:10px;
+	 }
+	 .text>h3{
+	 	color:rgb(206,129,46);
+	 }
+</style>
+<script>
+	$(function (){
+		$(".btn_image").on('click',function (){ 
+			$(".text").toggle("normal"); 
+		}); 
+	});
+	
+</script>
+</head>
+<body>
+	<header>
+		<a href="main.html"><img src="img/LOGO.png"/></a>
+	</header>
+	<nav>
+		<div>
+			<h1>요리팁 / COOKING TIPS</h1>
+		</div>
+	</nav>
+	
+	<div id="main" class="container">
+		<ul>
+			<li>
+				<div class="menulist">
+					<div class="contents">
+						<h2>떡갈비</h2>
+						<button type="button" class="btn_image"><img src="./img2/f2.jpg"/></button>
+					</div>
+					<div class="text" style="display: none">
+						<h3>후라이팬 조리 방법</h3>
+						<p>자연해동 또는 전자레인지에서 2분간 해동한 뒤<br/>
+						후라이팬 또는 그릴에 기름을 두르지 않고 굽기<br/>
+						중불에 고기가 노릇해질 때까지 구워지면 완성</p>
+						<br/>
+						<h3>에어프라이 or 오븐 조리 방법</h3>
+						<p>에어프라이에 냉동 상태의 떡갈비를 넣은 후<br/>
+						약 180도에서 12~14분간 구워지면 완성</p>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="menulist">
+					<div class="contents">
+						<h2>돈까스</h2>
+						<button type="button" class="btn_image"><img src="./img2/f3.jpg"/></button>
+					</div>
+					<div class="text" style="display: none">
+						<h3>후라이팬 조리 방법</h3>
+						<p>기름을 넉넉히 둘러주시고, 제일 약한불에서<br/>
+						10분씩 앞, 뒤로 구워주면 완성</p>
+						<br/>
+						<h3>에어프라이 or 오븐 조리 방법</h3>
+						<p>돈까스 앞, 뒷면으로 기름을 발라주신 후 <br/>
+						200도에서 13~15분씩 조리하면 완성</p>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="menulist">
+					<div class="contents">
+						<h2>오징어볶음</h2>
+						<button type="button" class="btn_image"><img src="./img2/f4.jpg"/></button>
+					</div>
+					<div class="text" style="display: none">
+						<h3>후라이팬 조리 방법</h3>
+						<p>팬에 식용유 두 숟가락(30ml)을 넣은 후<br/>
+						동봉된 마늘을 약불에 볶아 향을 내고<br/>
+						양념 오징어를 팬에 넣고 강불로 3분간 타지 않게 볶고<br/>
+						물이 나오면 모둠야채를 넣고 2분 간 볶아주시면 완성</p>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	
+</body>
+</html>

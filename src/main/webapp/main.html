@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CHEF_CHAN_DELIVERY</title>
+<meta charset="utf-8">
+<!-- 부트스트랩 순서
+	1.viewport
+	2.bootstrap 스타일시트
+	3.jQuery
+	4.bootstrap 스크립트
+ -->
+<meta name="viewport" content="width=device-width, initial-sale=1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+          integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+            integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+            crossorigin="anonymous"></script>
+<script src="vendor/jquery.easing.1.3.js"></script>
+<link rel="stylesheet" href="css/jquery.bxslider.css" type="text/css"/>
+
+<style>
+body, ul, li{
+	padding:0;
+	margin:0;
+	list-style-type:none;
+ 	font-family:'웰컴체OTF Regular';
+	font-weight:500;
+}
+ header{
+ 	height:150px;
+ }
+ header>a>img{
+ 	height:100px;
+ 	display:block;
+ 	margin:0px auto;
+ 	position: relative;
+    top: 25px;
+ }
+ nav{
+ 	background-color:rgb(249,162,58);
+ 	height:50px;
+ 	width : 1280;
+ }
+ nav>div{
+ 	margin:0 auto;
+	padding-top:5px;
+ 	width : 300px;
+ }
+ nav>div>label{
+ 	color:#fff;
+ 	margin:0 auto;
+ 	padding:6px;
+ 	font-size:15px;
+	font-size:1.5em;
+	line-height:30px;
+	width:140px;
+	text-align:center;
+	
+ }
+ a { text-decoration: none; color:white; }
+ a:visited { text-decoration: none; }
+ a:hover, a:active { text-decoration: none; }
+ 
+ .slideList{
+ 	width:1280px;
+ 	overflow:hidden;
+ 	margin:0 auto; 
+ }
+ .slideList img{
+ 	position:relative;
+ 	margin:7px;
+ 	width:260px;
+ 	height:195px;
+ 	padding:0px;
+ 	border-radius:10%;
+ }
+ #imgSpace{
+ 	margin:0 auto;
+ }
+ hr{
+ 	width:1280;
+ 	margin-top:0px;
+ }
+ h2{
+	 margin:0 auto;
+	 text-align:center;
+	 color:rgb(206,129,46);
+	 line-height:110px;
+	 }
+.container{
+	width:1280px;
+	margin:0 auto;
+}
+.carousel-item>a>input{
+	margin:0 auto;
+}
+#orderButton>a>input{
+	display:block;
+	margin:5px auto;
+	font-size:1.3em;
+	padding:5px;
+}
+
+</style>
+</head>
+<body>
+<header>
+	<a href="main.html"><img src="img/LOGO.png"/></a>
+</header>
+<nav>
+	<div>
+		<label><a href="login.html" style="text-decoration:none">로그인</a></label>
+		<label><a href="signUp.html" style="text-decoration:none">회원가입</a></label>
+	</div>
+</nav>
+<div class="container">
+	<div id="slideImg" class="carousel slide" data-ride="carousel" data-interval="5000">
+	<div class="carousel-inner">
+		<div class="carousel-item active">
+				<h2>이번 주 메뉴 / This Week's Menu</h2>
+				
+				<hr/>
+			<div class="slideList">
+				<div id="imgSpace">
+					<img src="img2/f1.jpg"/>
+					<img src="img2/f2.jpg"/>
+					<img src="img2/f3.jpg"/>				
+					<img src="img2/f4.jpg"/>
+					<img src="img2/f5.jpg"/>
+					<img src="img2/f6.jpg"/>
+					<img src="img2/f7.jpg"/>
+					<img src="img2/f8.jpg"/>
+				</div>
+			</div>
+			<div id="orderButton">
+				<p></p>
+				<a href="cookingTip.html"><input type="button" value="요리팁" class="form-control col-lg-2 btn text-white"
+					style="background-color: rgb(249,162,58);"/></a>
+				<a href="order.html"><input type="button" value="주문하러가기" class="form-control col-lg-2 btn text-white"
+					style="background-color: rgb(249,162,58);"/></a>
+			</div>
+		</div>
+		<div class="carousel-item">
+				<h2>지난 주 메뉴 / Last Week's Menu</h2>
+				<hr/>
+			<div class="slideList">
+				<div id="imgSpace">
+					<img src="img/1.jpg"/>
+					<img src="img/2.jpg"/>
+					<img src="img/3.jpg"/>
+					<img src="img/4.jpg"/>
+					<img src="img/5.jpg"/>
+					<img src="img/6.jpg"/>
+					<img src="img/7.jpg"/>
+					<img src="img/8.jpg"/>
+				</div>
+			</div>
+		</div>
+	</div>
+	<a href="#slideImg" class="carousel-control-prev" data-slide="prev"><span class="carousel-control-prev-icon"></span></a>	
+	<a href="#slideImg" class="carousel-control-next" data-slide="next"><span class="carousel-control-next-icon"></span></a>	
+	</div><!-- carousel 전체 end-->
+</div>
+</body>
+</html>

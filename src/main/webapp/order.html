@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CHEF_CHAN_DELIVERY_ORDER</title>
+<meta name="viewport" content="width=device-width, initial-sale=1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+          integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+            integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+            crossorigin="anonymous"></script>
+<style>
+	body, ul, li{
+		padding:0;
+		margin:0;
+		list-style-type:none;
+	}
+	 header{
+	 	height:150px;
+	 	padding:0 0 0 10px;
+	 }
+	 header>a>img{
+	 	height:100px;
+	 	display:block;
+	 	margin:0px auto;
+	 	position: relative;
+	    top: 25px;
+	 }
+	 nav{
+	 	background-color:rgb(249,162,58);
+	 	height:50px;
+	 }
+	 .form-horizontal{
+	 	width:1000px;
+	 	margin:0 auto;
+	 }
+	 h1{
+	 	margin :0px;
+	 	text-align:center;
+	 	color:rgb(206,129,46);
+	 	font-family:'웰컴체OTF Regular';
+	 	font-weight:500;
+	 	font-size:50px;
+	 	line-height:100px;
+	 }
+	 hr{
+	 	width:650px;
+	 	margin:10px auto;
+	 	padding: 0px 20px;
+	 }
+	 #main{
+	 	width:600px;
+	 	margin:0 auto;
+	 	padding-top:20px;
+	 }
+	 .form-group{
+	 	padding:8px;
+	 }
+	 .form-group>label, option{
+	 	font-size:1.06em;
+	 	font-weight:500;
+	 	font-family:'웰컴체OTF Regular';
+	 }
+	 h4{
+	 	font-family:'웰컴체OTF Regular';
+	 	text-align:center;
+	 	color:rgb(206,129,46);
+	 	line-height:30px;
+	 }
+</style>
+</head>
+<body>
+	<header>
+		<a href="main.html"><img src="img/LOGO.png"/></a>
+	</header>
+	<nav>
+		<span></span>
+	</nav>
+	
+	<form method="post" action="login.jsp" class="form-horizontal" id="frm">
+			<h1>주문확인</h1>
+			<div id="main">
+				<h4>정보수정 시 기존 이름 지우고 새로 입력</h4>
+				<hr/>
+				<div class="form-group row">
+					<label class="col-lg-4">이름 / Name</label>
+					<input type="text" id="username" name="username" placeholder="본인 이름" class="form-control col-lg-8"/>		
+				</div>
+				<div class="form-group row">
+					<label class="col-lg-4">전화번호 / Tel</label>
+					<input type="text" id="usertel" name="usertel" placeholder="본인 번호확인" class="form-control col-lg-8"/>		
+				</div>
+				<div class="form-group row">
+					<label class="col-lg-4">주소 / Address</label>
+					<input type="text" id="useraddr" name="useraddr" placeholder="본인 주소확인" class="form-control col-lg-8"/>		
+				</div>
+				<br/>
+				<h4>메뉴추가는 2가지 이상 불가능</h4>
+				<hr/>
+				<div class="form-group row">
+					<label class="col-lg-12">추가 할 메뉴1</label>
+					<div class="col-lg-1"></div>
+					<select class="col-lg-3">
+						<option value="Centervile">콩나물북어국</option>
+						<option value="Fairfax" selected>떡갈비</option>
+						<option value="Chantilly">돈까스</option>
+						<option value="Manassas">오징어볶음</option>
+						<option value="Gainsville">카레</option>
+						<option value="Wellington">두부조림</option>
+						<option value="Oakton">새우부추전믹스</option>
+						<option value="Oakton">동치미</option>
+					</select>
+					<div class="col-lg-1"></div>
+					<input type="number" placeholder="추가개수" min="0" max="3" class="form-control col-lg-5"/>
+					<div class="col-lg-2"></div>
+				</div>
+				<div class="form-group row">
+					<label class="col-lg-12">추가 할 메뉴2</label>
+					<div class="col-lg-1"></div>
+					<select class="col-lg-3">
+						<option value="Centervile">콩나물북어국</option>
+						<option value="Fairfax">떡갈비</option>
+						<option value="Chantilly" selected>돈까스</option>
+						<option value="Manassas">오징어볶음</option>
+						<option value="Gainsville">카레</option>
+						<option value="Wellington">두부조림</option>
+						<option value="Oakton">새우부추전믹스</option>
+						<option value="Oakton">동치미</option>
+					</select>
+					<div class="col-lg-1"></div>
+					<input type="number" placeholder="추가개수" min="0" max="3" class="form-control col-lg-5"/>
+					<div class="col-lg-2"></div>
+				</div>
+				<div id="loginbtn" class="form-group row">
+					<input type="submit" value="주문하기" class="form-control col-lg-12 btn text-white"
+					style="background-color: rgb(249,162,58);"/>
+			</div>
+		</form>
+</body>
+</html>
